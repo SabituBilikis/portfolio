@@ -1,0 +1,236 @@
+#particles-js  {
+   
+   display: flex;
+   justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    align-items: center;
+    
+
+
+    
+}
+.particles-js-canvas-el{
+    position: absolute;
+}
+*{
+    box-sizing: border-box;
+}
+header, section {
+    overflow: hidden;
+}
+root {
+    --single-front:"sniglet", cursive;
+    --Rubik:"Rubik", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(#160947, #1c1e8f);
+    --light-gray: rgba(255, 255,255,0.5);
+
+}
+header a { 
+    font-family: var(--single-front);
+    font-size: 0.9em;
+    color: whitesmoke;
+    
+}
+header {
+    background: #0e0435;
+    background: linear-gradient(#0f0925, #1c1e8f);;
+
+}
+ header .nav-item:last-child{
+     padding-right: 10.5em;
+ }
+ header .nav-item {
+     padding:0.9em;
+ }
+ header.navbar-brand{
+     padding-left: 8rem;
+ }
+ .nav-link:hover {
+     color: rgb(111, 111, 184);
+ }
+
+ header .row .column {
+     padding: 22vmin 1vmin;
+     padding-bottom: 35vmin;
+     margin-left: 40px;
+     font-family: var(--Rubik);
+     color: white;
+ }
+ 
+header .container .column {
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+header .container .column {
+    font-size: 8.5vmin;
+    font-weight: bold;
+    padding: 1vmin 5vmin;
+
+}
+
+ .logo {
+     width: 40px;
+     height: 30px;
+     border-radius: 50%;
+ }
+section#about {
+    padding: 20vmin 0;
+}
+section#about .row .col-md-6 .about img {
+    opacity: 0.8;
+    width: 100%;
+    border-radius: 10.2em;
+    border: 3px dashed #1c8f5f;
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+        }
+   @keyframes fadeIn {
+    0%{opacity: 0;}
+    100% {opacity:1;
+    }
+   }
+   @-webkit-keyframes fadeIn {
+    0%{opacity: 0;}
+    100% {opacity:1;
+    }
+   }
+    
+
+section#about .row .col-md-6:last-child{
+    position: relative;
+
+}
+section#about .row .col-md-6 .panel {
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--Rubik);
+    z-index: 1;
+    animation: fadeOut ease 10s;
+}
+@keyframes fadeOut {
+    0%{opacity: 0;}
+    100% {opacity:1;
+    }
+   }
+section#about .row .col-md-6 .panel h1{
+font-weight: bold;
+padding: 0.4em 0;
+font-size: 7em;
+}
+section#about .row .col-md-6 .panel p {
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+section#services h1{
+    font-size: 6vmin;
+    padding-top: 14vmin;
+}
+section#services .services {
+    padding: 10vmin 4vmin;
+}
+.progress-bar{
+    animation: fadeIn ease 10s;
+}
+
+section#about .card {
+    width: 22rem;
+    margin-top: 10vmin;
+
+}
+section#services .card .card-text {
+    padding: 0.5em;
+}
+section#services .card .card-body>a{
+    font-size: 1.5em
+}
+.section#services .carousel-item {
+    padding-left: 3rem;
+    
+
+}
+section#services .fontawesome {
+    border: 10 px double solid;
+    border-radius: 50%;
+    background-color:  #ff712f !important;
+    color: whitesmoke;
+}
+.border-radius {
+    border-radius: 340px;
+    width: 60%;
+}
+
+section#projects .carousel-inner img {
+    height: 60vh;
+    width: 10%;
+}
+/* footer */
+ footer {
+     background: #160947;
+     overflow: hidden;
+     padding: 14vmin 18vmin;
+     padding: 0 0.5em;
+     font-size: 12px;
+ }
+ 
+ 
+ 
+ /* sticky class*/
+ .sticky {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     background: rgba(3, 2, 27, 0.5);
+     z-index: 9999;
+     transition: all 1.5ease;
+ }
+
+/* media query */
+@media only screen and (max-width:768px){
+    header .navbar-brand {
+        padding-left: 1rem;
+    }
+    section#about .row .col-md-6 .panel {
+        position: initial;
+        width: initial; 
+        height: initial;
+    }
+    section#services .services {
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+
+    }
+    section#services .carousel-inner {
+        width:24rem;
+    }
+}
+
+@media only screen and (max-width:425px){
+footer .row .col-md-2 {
+    margin-top: 8vmin;
+
+}
+
+}
+
+@media only screen and (max-width:320px){
+    section#services .card {
+        width: 18rem;
+    }
+    section#about .carousel-inner {
+    margin-left: -14vmin;
+    }
+    section#services .carousel-inner {
+        width:100vw;
+    }
+}
